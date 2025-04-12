@@ -3,7 +3,7 @@
 {% block dashboard %}
 
 <script>
-    // Array of stock symbols to fetch data for
+    
     const symbol = "{{stocklist|escapejs}}";
     const start = "{{start|escapejs}}";
     const end = "{{end|escapejs}}";
@@ -12,9 +12,9 @@
 
     var symbols = JSON.parse(symbol.replace(/'/g, '"'));
 
-    // Function to fetch data for each symbol and combine it
+  
     const fetchDataForSymbols = async () => {
-        // Array to store promises for each fetch operation
+      
         const promises = symbols.map(symbol => {
             return fetch(`/api/graphdata/${symbol}/${start}/${end}`)
                 .then(response => {
@@ -24,7 +24,7 @@
                     return response.json();
                 })
                 .then(data => {
-                    // Process data for each symbol here
+                  
                     return {
                         symbol: symbol,
                         data: data
@@ -32,7 +32,6 @@
                 });
         });
 
-        // Wait for all fetch operations to complete
         const results = await Promise.all(promises);
 
         // Process and combine data for all symbols
@@ -325,10 +324,9 @@
             </div>
 
         </div>
-        <div class="flex items-center justify-center h-96 w-full rounded bg-gray-50 dark:bg-gray-800 col-span-1">
+        <!--<div class="flex items-center justify-center h-96 w-full rounded bg-gray-50 dark:bg-gray-800 col-span-1">
 
-            <div class="max-w-sm h-96 w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4 md:p-6">
-
+            
                 <div class="flex justify-between mb-3">
                     <div class="flex justify-center items-center">
                         <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white pe-1">Assets Allocation
@@ -368,10 +366,10 @@
                 </div>
 
                 <!-- Donut Chart -->
-                <div class="py-6" id="donut-chart"></div>
+               <!-- <div class="py-6" id="donut-chart"></div>
             </div>
 
-        </div>
+        </div> -->
     </div>
     <script>
         fetch(`/api/portfoliochart`)

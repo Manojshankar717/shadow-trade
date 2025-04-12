@@ -71,7 +71,7 @@
                     profitloss.classList.add("dark:text-red-500");
                 }
                 profitloss=document.getElementById("profitloss")
-                profitloss.innerHTML = "&#36; "+ data;
+                profitloss.innerHTML = "&#8377; "+ data;
                 // document.getElementById("currentprice").value = currentPrice;
             })
             .catch(error => {
@@ -189,8 +189,8 @@
     aria-label="Sidebar">
     <div class="h-full px-3 py-2 overflow-y-auto bg-gray-50 dark:bg-gray-800">
         <a href="https://flowbite.com/" class="flex items-center ps-2.5 mb-5">
-            <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 me-3 sm:h-7" alt="Investa Logo" />
-            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Investa</span>
+            <img src="https://i.postimg.cc/0NdcVHMN/Shadow.png" class="h-6 me-3 sm:h-7" alt="Shadow trade Logo" />
+            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Shadow trade</span>
         </a>
         <ul class="space-y-2 font-medium">
 
@@ -205,7 +205,7 @@
                 class="block max-w-sm p-4 px-6 pl-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-900 dark:border-gray-700 dark:hover:bg-gray-700">
 
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Profit / Loss:</h5>
-                <p id="profitloss" class="font-normal text-xl text-gray-700 dark:text-gray-300">&#36; {{totalbalance}}</p>
+                <p id="profitloss" class="font-normal text-xl text-gray-700 dark:text-gray-300">&#36;{{totalbalance}}</p>
             </a>
 
             <div class="block max-w-sm p-4 px-6 pl-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-900 dark:border-gray-700">

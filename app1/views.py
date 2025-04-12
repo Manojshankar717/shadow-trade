@@ -7,6 +7,8 @@ import requests as req
 from .mdate import today
 
 # Create your views here.
+
+
 def home(requests):
     return HttpResponse("Hello World!!")
 
