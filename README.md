@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Stock Market Simulator
 Stock Market Simulator buy or sell stocks with real time data with an intreactive and customizable user dashboard.
 
@@ -61,3 +62,6 @@ http://localhost:8000
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
 
+=======
+# shadow-trade
+>>>>>>> 6bc19e096a79d7adbbe57e9cc53e83f247676e01
